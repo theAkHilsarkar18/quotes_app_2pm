@@ -14,13 +14,24 @@ class HomeScreen extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.black,
           centerTitle: true,
-          title: const Text('My Quotes',style: TextStyle(color: Colors.white,fontWeight: FontWeight.w500,letterSpacing: 1),),
+          title: const Text(
+            'My Quotes',
+            style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w500,
+                letterSpacing: 1),
+          ),
         ),
         backgroundColor: Colors.black,
-        body: ListView.builder(itemBuilder: (context, index) => quotesBox(quotesList[index]['quote'],quotesList[index]['author']),itemCount: quotesList.length,),
+        body: GridView.builder(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+          itemBuilder: (context, index) => quotesBox(
+            quotesList[index]['quote'],
+            quotesList[index]['author'],
+          ),
+          itemCount: quotesList.length,
+        ),
       ),
     );
   }
 }
-
-
