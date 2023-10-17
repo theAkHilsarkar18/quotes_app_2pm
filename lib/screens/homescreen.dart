@@ -23,8 +23,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         backgroundColor: Colors.black,
-        body: GridView.builder(
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+        body: ListView.builder(
           itemBuilder: (context, index) => quotesBox(
             quotesList[index]['quote'],
             quotesList[index]['author'],
