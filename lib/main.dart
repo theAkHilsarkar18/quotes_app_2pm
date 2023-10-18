@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quotes_app_2pm/screens/dialguescreen.dart';
 import 'package:quotes_app_2pm/screens/homescreen.dart';
 import 'package:quotes_app_2pm/screens/imagescreen.dart';
 
@@ -22,8 +23,10 @@ class _QuotesAppState extends State<QuotesApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
+      initialRoute: 'dio',
       routes: {
-        '/' : (context) => HomeScreen(),
+        '/' : (context) => const HomeScreen(),
+        'dio' : (context) => DialogueScreen(),
       },
     );
   }
