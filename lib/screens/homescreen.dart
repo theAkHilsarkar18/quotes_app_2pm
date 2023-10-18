@@ -23,8 +23,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         backgroundColor: Colors.black,
-        body: GridView.builder(
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+        body: ListView.builder(
           itemBuilder: (context, index) => quotesBox(
             quotesList[index]['quote'],
             quotesList[index]['author'],
@@ -35,3 +34,11 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+// list - random quotes
+// on click -> open quotes
+// background image -> relevant image
+// change background image
+// font color and font style
+// add to favourite
+
+

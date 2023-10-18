@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quotes_app_2pm/screens/homescreen.dart';
+import 'package:quotes_app_2pm/screens/imagescreen.dart';
 
 void main()
 {
