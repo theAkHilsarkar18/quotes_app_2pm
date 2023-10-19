@@ -23,9 +23,9 @@ class _QuotesAppState extends State<QuotesApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
-      initialRoute: 'dio',
       routes: {
         '/' : (context) => const HomeScreen(),
+        'image' : (context) => const ImageScreen(),
         'dio' : (context) => DialogueScreen(),
       },
     );
